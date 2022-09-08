@@ -1199,7 +1199,7 @@ PlayMode::PlayMode() {
 			i = i + 1;
 		}
 		// update apple values
-		uint8_t val = distr(gen);
+		uint8_t val = (uint8_t)(distr(gen) & 0xff);
 		apples[j].value = val;
 		apples[j].apple_at = glm::vec2(92 + 24 * (i % 4), 164 - 24 * (i / 4));
 		apples[j].alive = true;
