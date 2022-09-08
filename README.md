@@ -10,7 +10,7 @@ Screen Shot:
 ![Screen Shot](screenshot.png)
 
 How Your Asset Pipeline Works: \
-All pixel art was created by me on https://www.pixilart.com. I wrote a python script to map each pixel of an image to two bit maps that followed the PPU466 specification. From there, since I chose to use 16 x 16 images, I split the bit maps up into four parts and printed the code to a text file to copy over to PlayMode.cpp. All files used for the Asset Pipeline can be found in the `assets/` directory.
+All pixel art was created by me on https://www.pixilart.com. I wrote a python script for my three main assets: apples, slime and walls. I read each png image with pillow and then mapped each pixel of the image to two bit maps that followed the PPU466 specification. I chose to use 16 x 16 images, so I had to split the bit maps up into four 8 x 8 bit maps to follow PPU466 and I printed the code in a text file so I could copy it over to PlayMode.cpp. All files used for the Asset Pipeline can be found in the `assets/` directory.
 
 
 How To Play: \
